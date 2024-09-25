@@ -46,14 +46,14 @@ border-radius: 3px;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    display: none; /* הסתרה במצב רגיל */
+    display: none; 
     justify-content: center;
     align-items: center;
     z-index: 1000;
   }
   
   #popup.show {
-    display: flex; /* הצגת הפופ-אפ */
+    display: flex; 
   }
   
   .popup-content {
@@ -63,7 +63,7 @@ border-radius: 3px;
     max-width: 600px;
     width: 100%;
     text-align: center;
-    max-height: 100vh; /* מקסימום גובה הפופ-אפ */
+    max-height: 100vh; 
   overflow-y: auto;
   }
   
@@ -79,40 +79,7 @@ border-radius: 3px;
     margin: 0;
     font-size: 38px;
   }
-/*
-.popup-screen {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   /* display: none;  מוסתר כברירת מחדל 
-}
 
-.popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-}
- 
-.popup-paragraph {
-    display: none; 
-}
-
-.popup-paragraph.active {
-    display: block;
-}
-
-.popup-trigger {
-    cursor: pointer;
-}
-*/
 h1 {
     margin-top: 40px;
     font-size: 36px;
@@ -133,22 +100,6 @@ h1 {
   justify-content: center; 
   align-items: flex-start; 
 }
-   /*
-background-image:url('/images/mannequine.png');
-    width: 420px;
-    height:595px;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-
-
-
-.mannequin img {
-    width: 100%;
-    background-color: transparent;
-}*/
 
 
 
@@ -184,16 +135,6 @@ height: 475px;
     height: 100px;
 }
 
-/* שימוש בקלאסים אחידים 
-.clothing {
-    position: absolute;
-    margin: auto;
-    display: none;
-    width: 50%;
-
-}*/
-
-
 
 
 #generate-outfit1,
@@ -202,12 +143,11 @@ height: 475px;
     width: 65%;
     margin-left: auto;
     padding: 20px;
-    /*bottom: 10;*/
     background-color: #8d626d;
     color: white;
     font-size: 20px;
 }
-#generate-outfit3{
+#generate-outfit3{ /*because mannequine 3 dont have bottoms tha angles were a litle bit diffrent*/
     margin: auto;
     width: 65%;
     margin-left: auto;
@@ -235,15 +175,7 @@ height: 475px;
     font-size: 16px;
     cursor: pointer;
 }
-/*
-.instagram-icon {
-    width: 40px;
-    height: 40px;
-    display: block;
-    margin-bottom: 10px;
-    margin-right: 10px;
-}
-*/
+
 h2 {
     margin-top: 150px;
     padding: 90px;
@@ -252,55 +184,13 @@ h2 {
 }
 
 .caption {
-   /* position: absolute;*/
     top: auto;
     left: 20%;
     color: #8d6e63;
     font-size: 18px;
 }
 
-/*.up-arrow {
-    top: 3vh;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    z-index: 1;
-    opacity: 0.8;
-    bottom: -10vh;
-    right: 20px;
-    z-index: 1000;
- }
- 
- .up-arrow img {
-     filter: invert(43%) sepia(77%) saturate(100%) brightness(93%) contrast(104%);
-     transition: transform 0.3s ease; 
-   
- }
- 
- .up-arrow img:hover {
-     transform: scale(1.2); 
- }
 
- .caption2 {
-     color: black;
-     font-size: 20px;
-     width: 290px;
-     margin: auto;
-     text-align: center;
-     font-weight: bold;
-     margin-top: 20px;
-    } */
-
-
-
-    /*header css*/
-
-    /*.js-loading *, .js-loading *:before, .js-loading *:after {
-    -webkit-animation-play-state: paused !important;
-            animation-play-state: paused !important;
-  }
-  */
   header {
             align-items: center;
     display: flex;
@@ -356,7 +246,7 @@ h2 {
 padding-top: 35vh;
     color: #fff;
   }
-  
+  /*annimation*/
   .header-title {
 
     -webkit-animation: zoom-title 1s .5s cubic-bezier(0,0,0,1) forwards;
@@ -530,7 +420,6 @@ padding-top: 35vh;
               transform: none;
     }
   }
-
 
 
   /*main css*/
