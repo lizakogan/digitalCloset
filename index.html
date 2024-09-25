@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liza's Closet</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script type="module" src="index.js" defer> </script>
+
+</head>
+
+<body>
+
+  <!-- Index.html content -->
+  <header>
+    <section class="header-bg-blurry"></section>
+    <section class="header-content">
+      <h1 class="header-title js-animate-letters animate-fade-zoom">
+        <span>F</span>
+        <span>A</span>
+        <span>S</span>
+        <span>H</span>
+        <span>I</span>
+        <span>O</span>
+        <span>N</span>
+      </h1>
+    </section>
+    <section class="header-down-arrow">
+      <!-- קישור לחלק של ה-open -->
+      <a href="#open-section">
+        <img src="images/downarrow.png" width="250">
+        
+      </a>
+    </section>
+  </header>
+
+  <!-- Open.html content -->
+  <section id="open-section" class="open-section"></section>
+
+  <!--<section class="open-section">
+      <section class="up-arrow">
+        <a href="#">
+          <img src="images/uparrow.png" width="120">
+        </a>
+      </section>
+    </section>-->
+
+  <div class="header-image"></div>
+
+  <div class="menu-bar">
+    <div class="popup-screen">
+      <ul>
+        <li class="active"><a href="#" class="popup-trigger" data-popup="project"><i class="fa fa-home"></i> project</a></li>
+        <li><a href="#" class="popup-trigger" data-popup="overview"><i class="fa fa-eye"></i> Overview</a></li>
+        <li><a href="#" class="popup-trigger" data-popup="inspired"><i class="fa-solid fa-hashtag"></i> Get Inspired</a></li>
+        <li><a href="#" class="popup-trigger" data-popup="about"><i class="fa-solid fa-person-dress"></i> About Me</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h1>LIZA'S CLOSET</h1>
+
+  <div class="mannequin-container">
+    <div>
+      <p class="caption">sporty morning</p>
+      <div class="mannequin" id="mannequin1">
+        <img id="top1" class="top" alt="top1">
+        <img id="bottom1" class="bottom" alt="bottom1">
+        <img id="shoes1" class="shoe" alt="shoe1">
+      </div>
+      <button id="generate-outfit1">Generate Outfit for Mannequin 1</button>
+    </div>
+
+    <div>
+      <p class="caption">spicy bruch</p>
+      <div class="mannequin" id="mannequin2">
+        <img id="top2" class="top" alt="Top 2">
+        <img id="bottom2" class="bottom" alt="Bottom 2">
+        <img id="shoes2" class="shoe" alt="Shoe 2">
+      </div>
+      <button id="generate-outfit2">Generate Outfit for Mannequin 2</button>
+    </div>
+
+    <div>
+      <p class="caption">its show time</p>
+      <div class="mannequin" id="mannequin3">
+        <img id="top3" class="dress" alt="top3">
+        <img id="shoes3" class="shoe" alt="Shoe 3">
+      </div>
+      <button id="generate-outfit3">Generate Outfit for Mannequin 3</button>
+    </div>
+  </div>
+  <h2></h2>
+    <!-- <p>When life gives you lemons, add tequila</p>-->
+  <!-- פופ-אפ -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="close-popup">&times;</span>
+      <p id="popup-text">Default content</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // מבטיח שהדף יתחיל תמיד למעלה
+      window.scrollTo(0, 0);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "lizas_closet",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "mongodb": "^6.8.1",
+    "mongoose": "^8.6.0"
+  }
+}
